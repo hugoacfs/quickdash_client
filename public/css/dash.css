@@ -1,0 +1,45 @@
+.quickdash-dashboard {
+    display: flex;
+    align-items: center;
+    flex-flow: row wrap;
+    margin: auto;
+    justify-content: center;
+}
+
+.quickdash-itemlink {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-decoration: none;
+    width: 198px;
+    display: inline-block;
+    position: relative;
+    color: #000;
+    font-weight: 700;
+    background-repeat: no-repeat;
+    background-color: #e9ecef;
+    border: solid #fff 2px;
+}
+.quickdash-inner {
+    padding-bottom: 15px;
+}
+.quickdash-svg {
+    fill: #00314f;
+    margin: auto;
+    text-align: center;
+    width: 110px;
+    padding: 10px;
+}
+.quickdash-text {
+    padding-left: 15px;
+}
+.quickdash-name {
+    margin-bottom: 5px;
+}
+.quickdash-source {
+    font-size: 10px;
+}
+/* Hover effects */
+.quickdash-itemlink:hover,
+.quickdash-itemlink:focus,
+.quickdash-itemlink:active {
+    border-color: #00314f;
+}
