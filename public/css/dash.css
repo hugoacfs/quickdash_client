@@ -7,7 +7,6 @@
 }
 
 .quickdash-itemlink {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     text-decoration: none;
     width: 198px;
     display: inline-block;
@@ -32,10 +31,11 @@
     padding-left: 15px;
 }
 .quickdash-name {
-    margin-bottom: 5px;
+    font-size: 1.2rem;
+    margin-bottom: 0px;
 }
 .quickdash-source {
-    font-size: 10px;
+    font-size: 0.8rem;
 }
 /* Hover effects */
 .quickdash-itemlink:hover,
