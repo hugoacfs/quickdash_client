@@ -4,11 +4,13 @@
     flex-flow: row wrap;
     margin: auto;
     justify-content: center;
+    overflow: hidden;
 }
 
 .quickdash-itemlink {
     text-decoration: none;
     width: 198px;
+    height: 177.8px;
     display: inline-block;
     position: relative;
     color: #000;
@@ -17,9 +19,12 @@
     background-color: #e9ecef;
     border: solid #fff 2px;
 }
+
 .quickdash-inner {
+    height: 100%;
     padding-bottom: 15px;
 }
+
 .quickdash-svg {
     fill: #00314f;
     margin: auto;
@@ -27,16 +32,23 @@
     width: 110px;
     padding: 10px;
 }
+
 .quickdash-text {
-    padding-left: 15px;
+    width: 100%;
+    position: absolute;
+    bottom: 20px;
+    padding-left: 12px;
 }
+
 .quickdash-name {
     font-size: 1.2rem;
     margin-bottom: 0px;
 }
+
 .quickdash-source {
     font-size: 0.8rem;
 }
+
 /* Hover effects */
 .quickdash-itemlink:hover,
 .quickdash-itemlink:focus,
