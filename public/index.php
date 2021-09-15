@@ -7,9 +7,6 @@ $alinks = [];
 foreach ($links as $link) {
     $alinks[] = $link;
 }
-echo '<pre>';
-print_r($links);
-echo '</pre>';
 
 $head = $MST->render('head');
 $htmllinks = $MST->render('body', ['links' => $alinks]);

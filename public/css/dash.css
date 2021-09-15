@@ -41,12 +41,12 @@
 }
 
 .quickdash-name {
-    font-size: 1.2rem;
+    font-size: 20px;
     margin-bottom: 0px;
 }
 
 .quickdash-source {
-    font-size: 0.8rem;
+    font-size: 14px;
 }
 
 /* Hover effects */

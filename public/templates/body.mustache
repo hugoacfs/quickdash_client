@@ -1,9 +1,33 @@
 <body>
+    <div class="container">
+        <header class="d-flex flex-wrap justify-content-center py-2 pt-4 mb-0">
+            <a href="https://www.chi.ac.uk" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+                <img src="https://bus.chi.ac.uk/img/logo.png" width="250px" alt="University of Chichester Website">
+            </a>
+            <h1 class="d-flex text-end fw-light" >UoC Dashboard</h1>
+        </header>
+        <hr>
+    </div>
     <main class="container ">
-        <div class="row justify-content-center">
-            {{#links}}
-                {{> partials/dashlink }}
-            {{/links}}
-        </div>
+        <section class="dash-area">
+            <div class="row justify-content-center">
+                {{#links}}
+                    {{> partials/dashlink }}
+                {{/links}}
+            </div>
+        </section>
+        <hr>
+        <section class="text-center container">
+            <div class="row py-3">
+            <div class="col-lg-6 col-md-8 mx-auto">
+                <h1 class="fw-light">Links for Students and Staff</h1>
+                <p class="lead ">This dashboard was created to help navigate the University's core services that students and staff might need to use regularly.</p>
+                <p>
+                <a href="https://supportme.chi.ac.uk/sw/selfservice" class="btn btn-warning my-2">Report an Issue</a>
+                <a href="https://help.chi.ac.uk/uoc-dashboard" class="btn btn-secondary my-2">Learn More</a>
+                </p>
+            </div>
+            </div>
+        </section>
     </main>
 </body>
