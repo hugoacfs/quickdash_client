@@ -2,12 +2,19 @@
 require_once('../config.php');
 
 $json = file_get_contents($CFG->apipath);
-$links = json_decode($json);
+$links = (array) json_decode($json);
+$alinks = [];
+foreach ($links as $link) {
+    $alinks[] = $link;
+}
+echo '<pre>';
+print_r($links);
+echo '</pre>';
 
 $head = $MST->render('head');
-$links = $MST->render('body', ['links' => $links]);
+$htmllinks = $MST->render('body', ['links' => $alinks]);
 
 echo $head;
 echo '<body>';
-echo $links;
+echo $htmllinks;
 echo '</body>';
