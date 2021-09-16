@@ -26,7 +26,7 @@
 }
 
 .quickdash-svg {
-    fill: #00314f;
+    fill: currentColor;
     margin: auto;
     text-align: center;
     width: 110px;
@@ -41,17 +41,17 @@
 }
 
 .quickdash-name {
-    font-size: 20px;
+    font-size: 1.2rem;
     margin-bottom: 0px;
 }
 
 .quickdash-source {
-    font-size: 14px;
+    font-size: 0.8rem;
 }
 
 /* Hover effects */
 .quickdash-itemlink:hover,
 .quickdash-itemlink:focus,
 .quickdash-itemlink:active {
-    border-color: #00314f;
+    border-color: currentColor;
 }
