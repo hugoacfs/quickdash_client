@@ -1,7 +1,7 @@
 <?php
 require_once('../config.php');
 
-$json = file_get_contents($CFG->apipath);
+$json = file_get_contents($CFG->apipath."?tags=core");
 $links = (array) json_decode($json);
 $alinks = [];
 foreach ($links as $link) {

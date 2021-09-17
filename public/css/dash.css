@@ -32,7 +32,10 @@
     max-width: 100px;
     padding: 10px;
 }
-
+.quickdash-svg svg{
+    max-height: 80px;
+    width: auto;
+}
 .quickdash-text {
     width: 100%;
     position: absolute;
