@@ -6,6 +6,9 @@ $CFG = new stdClass;
 $CFG->dirroot = __DIR__;
 $CFG->dirsept = DIRECTORY_SEPARATOR;
 $CFG->apipath = '';
+$CFG->jspath = 'http://|https://';
+$CFG->corereferrer = 'core';
+$CFG->standardtags = 'comma,delimited';
 
 // Add configuration items here.
 

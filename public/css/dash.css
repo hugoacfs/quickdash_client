@@ -1,4 +1,4 @@
-.quickdash-dashboard {
+.quickdash-dashboard, .quickdash-links {
     display: flex;
     align-items: center;
     flex-flow: row wrap;

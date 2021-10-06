@@ -4,13 +4,14 @@
             <a href="https://www.chi.ac.uk" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
                 <img src="https://bus.chi.ac.uk/img/logo.png" width="250px" alt="University of Chichester Website">
             </a>
-            <h1 class="d-flex text-end fw-light" >UoC Dashboard</h1>
+            <h1 class="d-flex text-end fw-light" >UoC Links</h1>
         </header>
         <hr>
     </div>
     <main class="container ">
         <section class="dash-area">
             <div class="row justify-content-center">
+            <h2>Core Links</h2>
                 {{#links}}
                     {{> partials/dashlink }}
                 {{/links}}
@@ -27,6 +28,20 @@
                     <a href="https://supportme.chi.ac.uk/sw/selfservice" class="btn btn-danger my-2">Report an Issue</a>
                 </p>
             </div>
+            </div>
+        </section>
+        <hr>
+        <section class="dash-area container">
+            <div class="row justify-content-center">
+            <h2>More Links</h2>
+                <!-- This is the capsule for the quickdash stuff. -->
+                <div class="quickdash-outter"></div>
+                <!-- This should point to the client, for example: www.quickdash.com/dash.js -->
+                <script>
+                    var dash_referrer = '{{referrer}}';
+                    var dash_tags = '{{tags}}';
+                </script>
+                <script src="{{{dashjsurl}}}"></script>
             </div>
         </section>
     </main>

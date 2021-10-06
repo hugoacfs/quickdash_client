@@ -9,7 +9,12 @@ foreach ($links as $link) {
 }
 
 $head = $MST->render('head');
-$htmllinks = $MST->render('body', ['links' => $alinks]);
+$htmllinks = $MST->render('body', [
+    'links' => $alinks, 
+    'referrer' => $CFG->corereferrer,
+    'tags' => $CFG->standardtags,
+    'dashjsurl' => $CFG->jspath
+]);
 
 echo $head;
 echo '<body>';
