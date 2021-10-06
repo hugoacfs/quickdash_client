@@ -29,5 +29,22 @@ xhr.onreadystatechange = function () {
         document.getElementsByClassName('quickdash-outter')[0].innerHTML = xhr.responseText;
     }
 };
-xhr.open('GET', 'https://{YOUR-URL}/dash.php' + dash_params);
+xhr.open('GET', 'https://{YOUR-URL}/dashtabs.php' + dash_params);
 xhr.send();
+
+function quickdash_opentab(event, tagname) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("quickdash-links tags");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("quickdash-tab-button");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    activetab = document.getElementsByClassName("quickdash-links tags tag-"+tagname);
+    for (i = 0; i < activetab.length; i++) { 
+        activetab[i].style.display = "inherit";
+    }
+    event.currentTarget.className += " active";
+}
