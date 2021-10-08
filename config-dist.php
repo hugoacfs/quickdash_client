@@ -9,6 +9,7 @@ $CFG->apipath = '';
 $CFG->jspath = 'http://|https://';
 $CFG->corereferrer = 'core';
 $CFG->standardtags = 'comma,delimited';
+$CFG->faviconurl = 'https://...';
 
 // Add configuration items here.
 

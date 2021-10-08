@@ -8,7 +8,7 @@ foreach ($links as $link) {
     $alinks[] = $link;
 }
 
-$head = $MST->render('head');
+$head = $MST->render('head', ['faviconurl' => $CFG->faviconurl]);
 $htmllinks = $MST->render('body', [
     'links' => $alinks, 
     'referrer' => $CFG->corereferrer,
