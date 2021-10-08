@@ -15,8 +15,8 @@ $htmllinks = $MST->render('body', [
     'tags' => $CFG->standardtags,
     'dashjsurl' => $CFG->jspath
 ]);
-
+echo '<!DOCTYPE html>';
+echo '<html lang="en">';
 echo $head;
-echo '<body>';
 echo $htmllinks;
-echo '</body>';
+echo '</html>';
