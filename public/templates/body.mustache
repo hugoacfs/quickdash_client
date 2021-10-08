@@ -9,12 +9,17 @@
         <hr>
     </div>
     <main class="container ">
-        <section class="dash-area">
+        <section class="dash-area container">
             <div class="row justify-content-center">
-            <h2>Core Links</h2>
-                {{#links}}
-                    {{> partials/dashlink }}
-                {{/links}}
+            <h2>Links to Web Services</h2>
+                <!-- This is the capsule for the quickdash stuff. -->
+                <div class="quickdash-outter"></div>
+                <!-- This should point to the client, for example: www.quickdash.com/dash.js -->
+                <script>
+                    var dash_referrer = '{{referrer}}';
+                    var dash_tags = '{{tags}}';
+                </script>
+                <script src="{{{dashjsurl}}}"></script>
             </div>
         </section>
         <hr>
@@ -28,20 +33,6 @@
                     <a href="https://supportme.chi.ac.uk/sw/selfservice" class="btn btn-danger my-2">Report an Issue</a>
                 </p>
             </div>
-            </div>
-        </section>
-        <hr>
-        <section class="dash-area container">
-            <div class="row justify-content-center">
-            <h2>More Links</h2>
-                <!-- This is the capsule for the quickdash stuff. -->
-                <div class="quickdash-outter"></div>
-                <!-- This should point to the client, for example: www.quickdash.com/dash.js -->
-                <script>
-                    var dash_referrer = '{{referrer}}';
-                    var dash_tags = '{{tags}}';
-                </script>
-                <script src="{{{dashjsurl}}}"></script>
             </div>
         </section>
     </main>
