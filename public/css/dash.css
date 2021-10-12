@@ -20,6 +20,10 @@
     border: solid #fff 2px;
 }
 
+.quickdash-itemlink:hover {
+     text-decoration: none;
+}
+
 .quickdash-inner {
     height: 100%;
     padding-bottom: 15px;
@@ -43,12 +47,12 @@
 }
 
 .quickdash-name {
-    font-size: 1.2rem;
+    font-size: 16px;
     margin-bottom: 0px;
 }
 
 .quickdash-source {
-    font-size: 0.8rem;
+    font-size: 12.8px;
 }
 
 /* Hover effects */
