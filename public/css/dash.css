@@ -61,3 +61,22 @@
 .quickdash-itemlink:active {
     border-color: currentColor;
 }
+
+/* Media Queries */
+@media screen and (max-width: 480px) {
+    .quickdash-itemlink {
+        width: 170px;
+    }
+    .quickdash-source {
+        font-size: 10px;
+    }
+    .quickdash-name {
+        font-size: 15px;
+    }
+}
+@media screen and (max-width: 390px) {
+    .quickdash-itemlink {
+        width: 45%;
+        min-width: 145px;
+    }
+}
