@@ -1,4 +1,4 @@
-.quickdash-dashboard {
+.quickdash-dashboard, .quickdash-links {
     display: flex;
     align-items: center;
     flex-flow: row wrap;
@@ -20,6 +20,10 @@
     border: solid #fff 2px;
 }
 
+.quickdash-itemlink:hover {
+     text-decoration: none;
+}
+
 .quickdash-inner {
     height: 100%;
     padding-bottom: 15px;
@@ -38,18 +42,17 @@
 }
 .quickdash-text {
     width: 100%;
-    position: absolute;
     bottom: 20px;
     padding-left: 12px;
 }
 
 .quickdash-name {
-    font-size: 1.2rem;
+    font-size: 16px;
     margin-bottom: 0px;
 }
 
 .quickdash-source {
-    font-size: 0.8rem;
+    font-size: 12.8px;
 }
 
 /* Hover effects */
@@ -57,4 +60,23 @@
 .quickdash-itemlink:focus,
 .quickdash-itemlink:active {
     border-color: currentColor;
+}
+
+/* Media Queries */
+@media screen and (max-width: 480px) {
+    .quickdash-itemlink {
+        width: 170px;
+    }
+    .quickdash-source {
+        font-size: 10px;
+    }
+    .quickdash-name {
+        font-size: 15px;
+    }
+}
+@media screen and (max-width: 390px) {
+    .quickdash-itemlink {
+        width: 45%;
+        min-width: 145px;
+    }
 }

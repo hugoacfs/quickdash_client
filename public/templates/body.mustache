@@ -4,16 +4,29 @@
             <a href="https://www.chi.ac.uk" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
                 <img src="https://bus.chi.ac.uk/img/logo.png" width="250px" alt="University of Chichester Website">
             </a>
-            <h1 class="d-flex text-end fw-light" >UoC Dashboard</h1>
+            <h1 class="d-flex text-end fw-light" >Web Services</h1>
         </header>
         <hr>
     </div>
     <main class="container ">
-        <section class="dash-area">
+        <section class="dash-area container">
             <div class="row justify-content-center">
-                {{#links}}
-                    {{> partials/dashlink }}
-                {{/links}}
+            <h2>Links to Web Services</h2>
+                <!-- This is the capsule for the quickdash stuff. -->
+                <div class="quickdash-outter"> 
+                    <div class="text-center"> 
+                        <p>Loading...</p>
+                        <div class="spinner-border text-primary" role="status">
+                            <span class="visually-hidden">Loading...</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- This should point to the client, for example: www.quickdash.com/dash.js -->
+                <script>
+                    var dash_referrer = '{{referrer}}';
+                    var dash_tags = '{{tags}}';
+                </script>
+                <script src="{{{dashjsurl}}}"></script>
             </div>
         </section>
         <hr>
@@ -23,7 +36,7 @@
                 <h1 class="fw-light">Links for Students and Staff</h1>
                 <p class="lead ">This dashboard was created to help navigate the University's core services that students and staff might need to use regularly.</p>
                 <p>
-                    <a href="https://help.chi.ac.uk/uoc-dashboard" class="btn btn-secondary my-2">Learn More</a>
+                    <a href="https://help.chi.ac.uk/dashboard-learnmore" class="btn btn-secondary my-2">Learn More About This Service</a>
                     <a href="https://supportme.chi.ac.uk/sw/selfservice" class="btn btn-danger my-2">Report an Issue</a>
                 </p>
             </div>

@@ -8,10 +8,15 @@ foreach ($links as $link) {
     $alinks[] = $link;
 }
 
-$head = $MST->render('head');
-$htmllinks = $MST->render('body', ['links' => $alinks]);
-
+$head = $MST->render('head', ['faviconurl' => $CFG->faviconurl]);
+$htmllinks = $MST->render('body', [
+    'links' => $alinks, 
+    'referrer' => $CFG->corereferrer,
+    'tags' => $CFG->standardtags,
+    'dashjsurl' => $CFG->jspath
+]);
+echo '<!DOCTYPE html>';
+echo '<html lang="en">';
 echo $head;
-echo '<body>';
 echo $htmllinks;
-echo '</body>';
+echo '</html>';
