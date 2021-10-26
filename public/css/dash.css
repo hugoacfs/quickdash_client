@@ -43,7 +43,8 @@
 .quickdash-text {
     width: 100%;
     bottom: 20px;
-    padding-left: 12px;
+    /* padding-left: 12px; */
+    text-align: center;
 }
 
 .quickdash-name {
