@@ -1,5 +1,6 @@
 <?php
 require_once('../config.php');
+include('gtag.php');
 
 $json = file_get_contents($CFG->apipath."?tags=core");
 $links = (array) json_decode($json);

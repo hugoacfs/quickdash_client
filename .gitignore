@@ -2,3 +2,5 @@ config.php
 data.json
 vendor/
 public/dash.js
+composer.phar
+gtag.php
